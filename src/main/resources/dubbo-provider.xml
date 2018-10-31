@@ -17,7 +17,9 @@
 
     <!-- Bean 聲明  和本地bean一样实现服务 -->
     <bean id="userService" class="com.jk.service.user.UserServiceImpl" />
+    <bean id="userService2" class="com.jk.service.djh.UserServiceImpl" />
 
     <!-- 声明需要暴露的服务接口 -->
     <dubbo:service interface="com.jk.service.user.UserService" ref="userService" />
+    <dubbo:service interface="com.jk.service.djh.UserService" ref="userService2" />
 </beans>
